@@ -4,31 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B3E5FC"
+    android:background="@color/colorPrimaryLight"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Log_In">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="361dp"
-        android:layout_height="54dp"
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:fontFamily="sans-serif"
-        android:gravity="center_horizontal"
-        android:text="@string/welcome_to_doctor_prescription"
-        android:textAllCaps="false"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:typeface="normal"
-        android:visibility="visible" />
+        android:text="@string/email_id"
+        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -36,29 +29,39 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:gravity="center_horizontal"
-        android:text="@string/have_medicine_on_time_stay_healthy"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="22sp"
+        android:ems="10"
+        android:hint="@string/please_enter_email"
+        android:inputType="textEmailAddress"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:gravity="center_horizontal"
-        android:text="@string/start_today"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="30sp"
+        android:text="@string/password"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="@string/please_enter_password"
+        android:inputType="textPassword"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -66,24 +69,10 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:background="#536DFE"
-        android:text="@string/existing_user_log_in"
+        android:background="@color/colorAccent"
+        android:text="@string/log_in"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:backgroundTint="#536DFE"
-        app:backgroundTintMode="src_in" />
+        app:backgroundTint="@color/colorAccent" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="#536DFE"
-        android:text="@string/new_user_sign_up"
-        android:textStyle="bold"
-        app:backgroundTint="#536DFE"
-        app:backgroundTintMode="src_in" />
 </LinearLayout>
