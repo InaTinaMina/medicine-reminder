@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
     tools:context=".home_page">
 
     <TextView
@@ -17,6 +18,7 @@
         android:layout_marginRight="301dp"
         android:layout_marginBottom="684dp"
         android:text="Welcome"
+        android:textColor="@android:color/holo_blue_dark"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,11 +54,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="537dp"
-        android:background="@color/colorAccent"
+        android:background="@android:color/holo_red_dark"
         android:text="Your Documents"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:backgroundTint="@color/colorAccent"
+        app:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
@@ -70,11 +72,11 @@
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
         android:layout_marginBottom="536dp"
-        android:background="@color/colorAccent"
+        android:background="@android:color/holo_red_dark"
         android:text="Your Doctors"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:backgroundTint="@color/colorAccent"
+        app:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
@@ -88,33 +90,78 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
-        android:background="@color/colorAccent"
+        android:background="@android:color/holo_red_dark"
         android:text="Conditions Ailments"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:backgroundTint="@color/colorAccent"
+        app:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button8"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.311" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="148dp"
         android:layout_height="80dp"
-        android:layout_marginTop="108dp"
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
-        android:layout_marginBottom="357dp"
-        android:background="@color/colorAccent"
+        android:layout_marginBottom="280dp"
+        android:background="@android:color/holo_red_dark"
         android:text="Medical Center"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:backgroundTint="@color/colorAccent"
+        app:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/doc"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/documnet"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="105dp"
+        android:layout_height="113dp"
+        app:srcCompat="?attr/actionModePasteDrawable"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="127dp"
+        android:layout_height="299dp"
+        app:srcCompat="@drawable/doctor"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="149dp"
+        android:layout_height="191dp"
+        app:srcCompat="@drawable/ailment"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="114dp"
+        android:layout_height="151dp"
+        app:srcCompat="@drawable/hospital"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="431dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
