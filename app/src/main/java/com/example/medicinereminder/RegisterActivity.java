@@ -22,7 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class RegisterActivity extends AppCompatActivity {
-    public static final String TAG = "TAG";
+   public static final String TAG = "TAG";
     EditText mFullName,mEmail,mPassword,mPhone;
     Button mRegisterBtn;
 
@@ -40,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         mEmail      = findViewById(R.id.email);
         mPassword   = findViewById(R.id.password);
         mPhone      = findViewById(R.id.phone);
-        mRegisterBtn= findViewById(R.id.registerBtn);
+        mRegisterBtn= findViewById(R.id.registerbtn);
         //mLoginBtn   = findViewById(R.id.createText);
 
         fAuth = FirebaseAuth.getInstance();
@@ -56,7 +56,7 @@ public class RegisterActivity extends AppCompatActivity {
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), HomepageActivity.class));
+
                 final String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
                 final String fullName = mFullName.getText().toString();
