@@ -112,7 +112,7 @@
         app:srcCompat="@drawable/doctor" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnReminder"
         android:layout_width="137dp"
         android:layout_height="83dp"
         android:layout_marginStart="33dp"
@@ -121,7 +121,7 @@
         android:layout_marginRight="113dp"
         android:layout_marginBottom="256dp"
         android:background="@android:color/holo_red_dark"
-        android:text="@string/conditions_ailments"
+        android:text="@string/set_reminder"
         android:textStyle="bold"
         app:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -148,32 +148,29 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="156dp"
-        android:layout_height="180dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginRight="51dp"
-        android:layout_marginBottom="112dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ailment" />
-
-    <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="113dp"
-        android:layout_height="230dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginBottom="84dp"
+        android:layout_width="129dp"
+        android:layout_height="251dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:srcCompat="@drawable/hospital" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="122dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/alarm_clock" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
