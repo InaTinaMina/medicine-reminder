@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight"
     android:orientation="vertical"
+    android:visibility="visible"
     tools:context=".LoginActivity">
 
     <TextView
@@ -74,5 +75,12 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:backgroundTint="@color/colorAccent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
 
 </LinearLayout>

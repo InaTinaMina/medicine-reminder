@@ -45,7 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         fAuth = FirebaseAuth.getInstance();
         //fStore = FirebaseFirestore.getInstance();
-        //progressBar = findViewById(R.id.progressBar);
+        progressBar = findViewById(R.id.progressBar);
 
         if(fAuth.getCurrentUser() != null){
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
@@ -61,6 +61,17 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = mPassword.getText().toString().trim();
                 final String fullName = mFullName.getText().toString();
                 final String phone    = mPhone.getText().toString();
+
+                if(TextUtils.isEmpty(fullName)){
+                    mFullName.setError("Email is Required.");
+                    return;
+                }
+
+                if(TextUtils.isEmpty(phone)){
+                    mPhone.setError("Email is Required.");
+                    return;
+                }
+
 
                 if(TextUtils.isEmpty(email)){
                     mEmail.setError("Email is Required.");
@@ -92,7 +103,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                             Toast.makeText(RegisterActivity.this, "User Created.", Toast.LENGTH_SHORT).show();
 
-                            startActivity(new Intent(getApplicationContext(), Home_Page.class));
+                            startActivity(new Intent(getApplicationContext(), HomepageActivity.class));
 
                         }else {
                             Toast.makeText(RegisterActivity.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();

@@ -8,14 +8,20 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button mSignBtn;
+    Button mSignBtn,mLogBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mSignBtn = findViewById(R.id.signbtn);
+        mLogBtn = findViewById(R.id.lgnbtn);
 
-
+        mLogBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            }
+        });
         mSignBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

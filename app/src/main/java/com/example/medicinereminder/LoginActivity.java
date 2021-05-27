@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mEmail = findViewById(R.id.email);
         mPassword = findViewById(R.id.password);
-        //progressBar = findViewById(R.id.progressBar);
+        progressBar = findViewById(R.id.progressBar);
         fAuth = FirebaseAuth.getInstance();
         mLoginBtn = findViewById(R.id.loginBtn);
        // mCreateBtn = findViewById(R.id.createText);
@@ -70,6 +70,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 progressBar.setVisibility(View.VISIBLE);
 
+
                 // authenticate the user
 
                 fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -77,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(LoginActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(),HomepageActivity.class));
                         }else {
                             Toast.makeText(LoginActivity.this, "Error ! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             progressBar.setVisibility(View.GONE);
@@ -88,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-
+    /*
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -136,7 +137,7 @@ public class LoginActivity extends AppCompatActivity {
                 passwordResetDialog.create().show();
 
             }
-        });
+        });*/
 
 
     }
