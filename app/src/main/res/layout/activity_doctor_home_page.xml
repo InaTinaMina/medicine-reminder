@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/doctor_bgimage"
+    tools:context=".DoctorHomePage">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:background="#E51F1F"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Welcome"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="209dp"
+        android:layout_height="36dp"
+        android:background="#FF5722"
+        android:ems="10"
+        android:fontFamily="@font/baloo_bhai"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:background="#CDDC39"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="You can see your patients here"
+        android:textColor="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="152dp"
+        android:layout_height="65dp"
+        android:fontFamily="@font/lalezar"
+        android:text="List of patients"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="141dp"
+        android:layout_height="53dp"
+        android:background="#CDDC39"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="You can prescribe medicine "
+        android:textColor="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="119dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/lalezar"
+        android:text="Prescribe "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.029" />
+</androidx.constraintlayout.widget.ConstraintLayout>

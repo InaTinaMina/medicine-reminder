@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3281B"
+    tools:context=".FirstScreen">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="295dp"
+        android:layout_height="112dp"
+        android:background="#FFEB3B"
+        android:fontFamily="@font/anton"
+        android:text="Let's Start by knowing who you are"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="195dp"
+        android:layout_height="107dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:includeFontPadding="true"
+        android:text="Patient"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        app:backgroundTint="@color/design_default_color_secondary"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="192dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="148dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Doctor"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
