@@ -8,28 +8,25 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button mSignBtn,mLogBtn;
+    Button doctor,patient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mSignBtn = findViewById(R.id.signbtn);
-        mLogBtn = findViewById(R.id.lgnbtn);
 
-        mLogBtn.setOnClickListener(new View.OnClickListener() {
+        doctor = findViewById(R.id.doclogin);
+        patient = findViewById(R.id.patlogin);
+        doctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                startActivity(new Intent(getApplicationContext(), DoctorloginActivity.class));
             }
         });
-        mSignBtn.setOnClickListener(new View.OnClickListener() {
+        patient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
+                startActivity(new Intent(getApplicationContext(), FirstscreenActivity.class));
             }
         });
     }
-
-
-
 }
