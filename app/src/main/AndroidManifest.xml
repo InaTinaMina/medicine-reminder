@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicineReminder">
+        <activity android:name=".ListofPatients"></activity>
+        <activity android:name=".PrescribeMedicine" />
         <activity android:name=".FirstscreenActivity" />
         <activity android:name=".DoctorloginActivity" />
         <activity android:name=".DoctorhomepageActivity" />

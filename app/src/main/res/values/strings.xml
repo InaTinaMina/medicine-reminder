@@ -41,4 +41,17 @@
     <string name="minute">Minute</string>
     <string name="set_time">Set Time</string>
     <string name="set_alarm">Set Alarm</string>
+    <string name="dosage">Dosage</string>
+    <string name="medicine">Medicine</string>
+
+
+
+    <string name="you_can_see_your_patients_here">You can see your patients here</string>
+    <string name="list_of_patients">List of patients</string>
+    <string name="you_can_prescribe_medicine">You can prescribe medicine</string>
+    <string name="prescribe">Prescribe</string>
+    <string name="appointments">Appointments</string>
+    <string name="your_appointments">Your Appointments</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="support">SUPPORT</string>
 </resources>
